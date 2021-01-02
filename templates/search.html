@@ -1,1 +1,27 @@
-{% extends "base.html" %} {% block content %} {% endblock content %}
+{% extends "base.html" %} 
+{% block content %}
+<hr> <hr>
+<h2 style="text-align: center">{{ search | title }} Jobs</h2>
+<br> <br>
+
+<div class="row">
+    {% for post in final_posts %}
+    <div class="col-sm-4">
+      <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">{{post.0}}</h4>
+
+                <h6 class="card-title">{{post.1}}</h6>
+
+                <h6 class="card-title">{{post.2}}</h6>
+
+                <h6 class="card-title">{{post.3}}</h6>
+
+                <!-- <p class="card-text">This is a longer card with supporting text below.</p> -->
+            </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

@@ -7,15 +7,37 @@
     <title>JOBSERA</title>
     <!-- CSS -->
     <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h2>Find Jobs -</h2>
-    <br />
-    <form action="{% url 'search' %}" method="POST">
-      {% csrf_token %}
-      <input type="text" class="textbox" name="search" placeholder="Search" />
-      <input title="Search..." value="Search" type="submit" class="button" />
-    </form>
+    <div class="d-flex justify-content-center">
+      <div>
+        <h2 class="text-center">Find Jobs</h2>
+        <br />
+        <form action="{% url 'search' %}" method="POST">
+          {% csrf_token %}
+          <input
+            type="text"
+            class="textbox"
+            name="search"
+            placeholder="Search"
+          />
+          <input
+            title="Search..."
+            value="Search"
+            type="submit"
+            class="button"
+          />
+        </form>
+      </div>
+    </div>
+
     {% block content %} {% endblock content %}
   </body>
 </html>
