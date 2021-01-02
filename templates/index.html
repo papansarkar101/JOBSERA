@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block content %} Find Jobs -
+<br />
+<form action="{% url 'search' %}" method="POST">
+  {% csrf_token %}
+  <input type="text" class="textbox" name="search" placeholder="Search" />
+  <input title="Search..." value="Search" type="submit" class="button" />
+</form>
+{% endblock content %}
