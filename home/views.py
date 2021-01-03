@@ -7,6 +7,7 @@ from requests.compat import quote_plus
 from . import models
 
 BASE_URL = "https://in.indeed.com/jobs?q={}"
+POST_URL = "https://in.indeed.com/"
 
 
 # Create your views here.
@@ -31,11 +32,31 @@ def search(request):
     final_posts = []
 
     for post in all_post:
-        post_title = post.find(class_="title").text
+        post_title = post.find(class_="jobtitle").text
+        post_link = POST_URL + post.find(class_="jobtitle").get('href')
+
         company = post.find(class_="company").text
         location = post.find(class_="location").text
 
-        final_posts.append((post_title, company, location))
+        if post.find(class_='salaryText'):
+            salary = post.find(class_='salaryText').text
+        else:
+            salary = 'N/A'
+
+        if post.find(class_='jobCardReqHeader'):
+            requirment = post.find(class_='jobCardReqItem').text
+        else:
+            requirment = 'N/A'
+
+        if post.find(class_='summary'):
+            summary = post.find(class_='summary').text
+        else:
+            summary = 'N/A'
+
+        date = post.find(class_="date").text
+
+        final_posts.append((post_title, company, location, salary, requirment,
+                            summary, date, post_link))
 
     send_searches_to_frontend = {
         'final_url': final_url,
