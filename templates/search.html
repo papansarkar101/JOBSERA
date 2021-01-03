@@ -7,9 +7,9 @@
 <div class="row">
     {% for post in final_posts %}
     <div class="col-sm-4">
-      <div class="card">
+       <div class="card">
             <div class="card-body">
-              <a href="{{post.7}}">
+              <a href="{{post.7}}" target="_blank">
                 <h4 class="card-title">{{post.0}}</h4></a>
 
                 <h6 class="card-title">{{post.1}}</h6>
@@ -23,8 +23,11 @@
                 <p class="card-text"> {{ post.5 }} </p>
 
                 <small class="card-text"> {{ post.6 }} </small>
+
+                <a href="{{post.7}}" target="_blank">
+                <button class="more"><span>Apply now!</span></button> </a>
             </div>
-      </div>
+       </div>
     </div>
     {% endfor %}
 </div>
