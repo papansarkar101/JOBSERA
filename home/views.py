@@ -7,7 +7,7 @@ from requests.compat import quote_plus
 from . import models
 
 BASE_URL = "https://in.indeed.com/jobs?q={}"
-POST_URL = "https://in.indeed.com/"
+POST_URL = "https://in.indeed.com"
 
 
 # Create your views here.
