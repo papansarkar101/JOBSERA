@@ -1,0 +1,1 @@
+A simple website to find jobs using Django, html, css and beautifulsoup4.
