@@ -7,10 +7,34 @@ font-family: 'Roboto Mono', monospace;
 */
 
 body {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+nav a,
+form {
+  padding: 0 60px;
+}
+
+/* Search bar */
+input[type="text"] {
+  padding: 6px;
+  font-size: 16px;
+  width: 600px !important;
+}
+
+input[type="submit"] {
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 6px;
+  background-color: #18b346;
+  color: white;
+}
+
+input[type="submit"].btn:hover {
+  /* border: 1px solid black 0.5; */
 }
 
 button:focus {
@@ -28,7 +52,7 @@ button:focus {
   transform: translate(-50%, -50%);
   display: inline-block;
   height: 40px;
-  padding: 0px 55px;
+  padding: 0px 40px;
   background: #1bc74e;
   border: none;
   font: 14px "Varela Round";
