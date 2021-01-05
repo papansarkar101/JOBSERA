@@ -6,9 +6,6 @@ font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Roboto Mono', monospace; 
 font-family: 'Yeon Sung', cursive;
 font-family: 'Staatliches', cursive;
-
-
-
 */
 
 body {
@@ -154,8 +151,13 @@ button:focus {
 
 /* Media Query */
 @media only screen and (max-width: 1000px) {
+  .navbar {
+    margin: 0 auto;
+    display: table;
+    margin-right: auto !important;
+  }
   h1 {
-    font: 0.8em !important;
+    font-size: 1.3em !important;
   }
   nav form {
     display: none;
