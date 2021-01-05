@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Roboto+Condensed&family=Yeon+Sung&family=Staatliches&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Roboto+Condensed&family=Exo+2&family=Righteous&family=Roboto+Mono&display=swap");
 
 /* 
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Roboto Mono', monospace; 
-font-family: 'Yeon Sung', cursive;
-font-family: 'Staatliches', cursive;
+font-family: 'Righteous', cursive;
 */
 
 body {
@@ -37,14 +36,15 @@ h1 {
   color: white;
   text-align: center;
   font-size: 4em !important;
-  font-family: "Staatliches", cursive;
+  font-family: "Righteous", cursive;
   padding-bottom: 20px;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 input::placeholder {
-  font-size: 0.9em;
-  font-family: "Rajdhani", sans-serif;
+  font-size: 0.8em;
+  font-family: "Roboto Mono", monospace;
 }
 
 nav a,
@@ -53,7 +53,11 @@ form {
 }
 
 nav a {
-  font-family: "Yeon Sung", cursive;
+  font-family: "Exo 2", sans-serif;
+}
+
+nav a img {
+  padding-bottom: 2.1px;
 }
 
 /* Search bar */
@@ -88,7 +92,7 @@ input[type="submit"] {
 
 input[type="text"]:focus {
   border: none;
-  width: 600px !important;
+  width: 800px !important;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
@@ -173,7 +177,7 @@ button:focus {
     transform: translate(-50%);
   }
   h1 {
-    font-size: 1.3em !important;
+    font-size: 1.4em !important;
   }
   nav form {
     display: none;
