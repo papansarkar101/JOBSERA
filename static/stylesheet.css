@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Roboto+Condensed&family=Exo+2&family=Righteous&family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&family=Roboto+Condensed&family=Exo+2&family=Yeon+Sung&family=Righteous&family=Roboto+Mono&display=swap");
 
 /* 
 font-family: 'Rajdhani', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 font-family: 'Roboto Mono', monospace; 
 font-family: 'Righteous', cursive;
+font-family: 'Yeon Sung', cursive;
+
 */
 
 body {
@@ -53,7 +55,8 @@ form {
 }
 
 nav a {
-  font-family: "Exo 2", sans-serif;
+  font-family: "Yeon Sung", cursive;
+  font-size: 1.4em !important;
 }
 
 nav a img {
