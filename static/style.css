@@ -10,7 +10,7 @@ font-family: 'Yeon Sung', cursive;
 */
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Rajdhani", sans-serif !important;
   text-align: center;
   margin: 0;
   padding: 0;
@@ -229,6 +229,7 @@ button:focus {
   background-attachment: fixed;
   padding-top: 40px;
   padding-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 #searches h1 {
@@ -253,6 +254,7 @@ button:focus {
 }
 
 #searches p {
+  font-family: "Roboto Mono", monospace;
   font-size: 14px;
   margin-top: 10px;
   color: black;
@@ -267,4 +269,58 @@ button:focus {
   cursor: pointer;
   transition: 0.8s;
   color: white;
+}
+
+/* Sticky footer position and size
+-------------------------------------------------- */
+.footer {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 575px !important;
+}
+
+/* Taller footer on small screens */
+@media (max-width: 567em) {
+  body {
+    margin-bottom: 500px;
+  }
+  .footer {
+    height: 700px;
+  }
+}
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+  padding-top: 30px;
+  background-color: #7f858c;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+
+footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(79, 75, 75, 0.1);
+  border: none;
+  resize: none;
+  color: #c2d8d8;
+  padding: 0.7em 1em;
 }
