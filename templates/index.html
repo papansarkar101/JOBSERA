@@ -1,4 +1,41 @@
 {% extends "base.html" %} 
 {% block content %} 
-{{ search }} 
+<section id="searches">
+    <div class="container">
+        <h1> Popular Searches </h1>
+        <div class="row searches">
+
+            <div class="col-md-4 text-center">
+                <div class="icon">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <h3> Part Time Jobs </h3>
+                    <p>
+                        Lots of college students searches <br> part time jobs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="icon">
+                    <i class="fa fa-laptop" aria-hidden="true"></i>
+                    <h3> Software Devoloper </h3>
+                    <p>
+                       This category has huge number of <br> searches in this website.
+                    </p>
+                </div>
+            </div> 
+                  
+            <div class="col-md-4 text-center">
+                <div class="icon">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <h3> Goverment Jobs </h3>
+                    <p>
+                       The number of govt. job searches <br> is also very high.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
 {% endblock content %}

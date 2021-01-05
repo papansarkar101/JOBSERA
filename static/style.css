@@ -63,6 +63,16 @@ nav a img {
   padding-bottom: 2.1px;
 }
 
+/* Card */
+.main-content {
+  background-color: white;
+}
+
+.base-content {
+  margin-top: 20px;
+  background-color: white;
+}
+
 /* Search bar */
 input[type="text"] {
   padding: 6px;
@@ -85,7 +95,8 @@ input[type="submit"] {
 }
 
 .d-flex input[type="submit"] {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   display: inline-block;
   float: none !important;
   left: 50%;
@@ -206,4 +217,54 @@ button:focus {
     margin-right: auto;
     text-align: left;
   }
+}
+
+#searches {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), */
+  /* url(Images/cook.jpg); */
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  color: black !important;
+  background-attachment: fixed;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#searches h1 {
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#searches h1::after {
+  content: "";
+  background: #efefef;
+  display: block;
+  height: 3px;
+  width: 100px;
+  margin: 10px auto 5px;
+}
+
+.icon {
+  font-size: 40px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#searches p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: black;
+}
+
+#searches p:hover {
+  color: white;
+}
+
+.searches .col-md-4:hover {
+  background: #0682a1;
+  cursor: pointer;
+  transition: 0.8s;
+  color: white;
 }
