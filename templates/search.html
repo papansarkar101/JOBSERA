@@ -3,11 +3,13 @@
 
 <br>
 
+{% if error_message %}
   <div class="text-dark bg-white text-center">
     <h3>
       {{ error_message }}
    </h3>
   </div>
+{% endif %}
 
 <div class="row card-group main-content">
     {% for post in final_posts %}

@@ -32,6 +32,8 @@ def search(request):
     if len(all_post) < 1:
         error_message = "Please Enter a Valid Job Title, Company or Keywords"
 
+        print(error_message)
+
         send_searches_to_frontend = {
             'error_message': error_message,
         }
