@@ -8,7 +8,7 @@
     <!-- Favicon -->
     <link rel="icon" href="{% static 'images\logo.png' %}" type="image/png">
     <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'stylesheet.css' %}" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
@@ -35,10 +35,12 @@
       </form>
     </nav>
 
+    <h1>
+      We will help you to find your dream job<br>
+      or maybe a normal one! 😁
+    </h1>
+  
     <div class="d-flex justify-content-center">
-      <div>
-        <h2 class="text-center">Find Jobs</h2>
-        <br />
         <form action="{% url 'search' %}" method="POST">
           {% csrf_token %}
           <input
@@ -54,8 +56,9 @@
             class="button"
           />
         </form>
-      </div>
     </div>
+
+    
 
     {% block content %} {% endblock content %}
 
