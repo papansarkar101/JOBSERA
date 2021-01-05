@@ -77,6 +77,15 @@ input[type="submit"] {
   border: none;
 }
 
+.d-flex input[type="submit"] {
+  margin-top: 10px;
+  display: inline-block;
+  float: none !important;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+}
+
 input[type="text"]:focus {
   border: none;
   width: 600px !important;
@@ -156,6 +165,13 @@ button:focus {
 
 /* Media Query */
 @media only screen and (max-width: 1000px) {
+  nav a {
+    display: inline-block;
+    float: none !important;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+  }
   h1 {
     font-size: 1.3em !important;
   }
@@ -164,20 +180,15 @@ button:focus {
   }
   /* Search bar */
   input[type="text"] {
-    width: 100% !important;
+    width: 200px !important;
   }
-  input[type="submit"] {
-    margin-top: 10px;
-    display: inline-block;
-    float: none !important;
-    left: 50%;
-    position: relative;
-    transform: translate(-50%);
-  }
+
   input[type="text"]:focus {
-    border: none;
-    width: auto !important;
+    width: 300px !important;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
   }
+
   div.form {
     display: block;
     text-align: center;
