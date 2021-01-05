@@ -328,3 +328,8 @@ footer .form-control {
 .footer-logo {
   font-family: "Yeon Sung", cursive !important;
 }
+
+/* error message */
+h3 {
+  padding: 50px;
+}

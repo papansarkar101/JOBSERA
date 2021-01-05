@@ -29,6 +29,14 @@ def search(request):
     all_post = soup.find_all(
         'div', {'class': 'jobsearch-SerpJobCard'})  # All job posts
 
+    if len(all_post) < 1:
+        error_message = "Please Enter a Valid Job Title, Company or Keywords"
+
+        send_searches_to_frontend = {
+            'error_message': error_message,
+        }
+        return render(request, 'search.html', send_searches_to_frontend)
+
     final_posts = []
 
     for post in all_post:

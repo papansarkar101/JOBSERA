@@ -3,6 +3,12 @@
 
 <br>
 
+  <div class="text-dark bg-white text-center">
+    <h3>
+      {{ error_message }}
+   </h3>
+  </div>
+
 <div class="row card-group main-content">
     {% for post in final_posts %}
     <div class="col-lg-4 col-md-6 col-sm-12 even">
@@ -30,7 +36,6 @@
     </div>
     {% endfor %}
 </div>
-
 
 
 {% endblock content %}
