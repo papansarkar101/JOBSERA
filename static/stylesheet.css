@@ -44,7 +44,7 @@ h1 {
 
 nav a,
 form {
-  padding: 0 60px;
+  padding: 0 50px;
 }
 
 nav a {
@@ -151,11 +151,6 @@ button:focus {
 
 /* Media Query */
 @media only screen and (max-width: 1000px) {
-  .navbar {
-    margin: 0 auto;
-    display: table;
-    margin-right: auto !important;
-  }
   h1 {
     font-size: 1.3em !important;
   }
@@ -164,21 +159,10 @@ button:focus {
   }
   /* Search bar */
   input[type="text"] {
-    padding: 6px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid #4dd0e1;
-    box-shadow: 0 2px 0 0 #4dd0e1;
     width: 100% !important;
   }
   input[type="submit"] {
-    padding: 7px;
-    font-size: 16px;
-    border-radius: 4px;
-    background-color: #1bc74e;
-    color: white;
-    border: none;
+    margin-top: 10px;
   }
   input[type="text"]:focus {
     border: none;
