@@ -324,3 +324,7 @@ footer .form-control {
   color: #c2d8d8;
   padding: 0.7em 1em;
 }
+
+.footer-logo {
+  font-family: "Yeon Sung", cursive !important;
+}
