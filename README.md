@@ -5,5 +5,5 @@ Install all requirements -> requirements.txt
 
 You can visit this website now:
 
-⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇
-<a href="jobsera.herokuapp.com"> JOBSERA.HEROKUAPP.COM </a>
+⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ <br>
+<a href="https://jobsera.herokuapp.com/" target="_blank"> JOBSERA.HEROKUAPP.COM </a>
