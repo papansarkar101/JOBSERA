@@ -1,7 +1,12 @@
 A simple website to find jobs using Django, html, css and beautifulsoup4.
 
-To run this project on your system:
-Install all requirements -> requirements.txt
+
+For local System -
+Run the following commands to get started:
+
+virtualenv env
+pip install -r requirements.txt
+python manage.py runserver
 
 You can visit this website now:
 
